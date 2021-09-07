@@ -12,7 +12,7 @@
         android:id="@+id/tvInput"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-
+        android:onClick="onEqual"
         android:background="#efefef"
         android:textSize="48sp"
         android:maxLength="12"
@@ -62,7 +62,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="/"
-            android:onClick="onDigit"
+            android:onClick="onOperatorPoint"
             />
 
     </LinearLayout>
@@ -110,7 +110,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="*"
-            android:onClick="onDigit"
+            android:onClick="onOperatorPoint"
             />
 
     </LinearLayout>
@@ -158,7 +158,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="-"
-            android:onClick="onDigit"
+            android:onClick="onOperatorPoint"
             />
 
     </LinearLayout>
@@ -178,7 +178,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="."
-            android:onClick="onDigit"
+            android:onClick="onDecimalPoint"
             />
 
         <Button
@@ -197,7 +197,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="CRL"
-            android:onClick="onDigit"
+            android:onClick="onClear"
             />
         <Button
             android:id="@+id/btnPlus"
@@ -206,7 +206,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="+"
-            android:onClick="onDigit"
+            android:onClick="onOperatorPoint"
             />
 
     </LinearLayout>
