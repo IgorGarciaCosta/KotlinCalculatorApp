@@ -12,7 +12,6 @@
         android:id="@+id/tvInput"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:onClick="onEqual"
         android:background="#efefef"
         android:textSize="48sp"
         android:maxLength="12"
@@ -218,12 +217,13 @@
         android:layout_weight="1"
         android:orientation="horizontal"
         >
+
         <Button
             android:id="@+id/btnEqual"
-            android:layout_marginHorizontal="6dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginHorizontal="6dp"
             android:text="="
-            />
+            android:onClick="onEqual"/>
     </LinearLayout>
 </LinearLayout>
